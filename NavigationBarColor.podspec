@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NavigationBarColor'
   s.version          = '0.1.0'
-  s.summary          = 'ViewController's NavigationBar color'
+  s.summary          = 'ViewController NavigationBar color'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
