@@ -7,26 +7,41 @@
 //
 
 #import "WBViewController1.h"
+#import "UINavigationBar+wbColor.h"
 
 @interface WBViewController1 ()
-
+@property(nonatomic, strong)UIButton *pushbtn;
+@property(nonatomic, strong)UIButton *popbtn;
 @end
 
 @implementation WBViewController1
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithRed:drand48() green:drand48() blue:drand48() alpha:1];
+    self.pushbtn = [[UIButton alloc] init];
+    self.pushbtn.backgroundColor = [UIColor colorWithRed:drand48() green:drand48() blue:drand48() alpha:1];
+    [self.pushbtn setTitle:@"push" forState:UIControlStateNormal];
+    self.pushbtn.frame = CGRectMake(0, 100, 50, 50);
+    [self.pushbtn addTarget:self action:@selector(pushbtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.pushbtn];
+    
+    
+    self.popbtn = [[UIButton alloc] init];
+    self.popbtn.backgroundColor = [UIColor colorWithRed:drand48() green:drand48() blue:drand48() alpha:1];
+    [self.popbtn setTitle:@"pop" forState:UIControlStateNormal];
+    self.popbtn.frame = CGRectMake(100, 100, 50, 50);
+    [self.popbtn addTarget:self action:@selector(popbtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.popbtn];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pushbtnClick:(UIButton *)btn {
+   WBViewController1 *vc = [[WBViewController1 alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-*/
 
+- (void)popbtnClick:(UIButton *)btn {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

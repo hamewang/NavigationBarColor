@@ -6,11 +6,11 @@
 //  Copyright © 2019 304635659@qq.com. All rights reserved.
 //
 
-#import "WBViewController.h"
+@import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WBViewController1 : WBViewController
+@interface WBViewController1 : UIViewController
 
 @end
 

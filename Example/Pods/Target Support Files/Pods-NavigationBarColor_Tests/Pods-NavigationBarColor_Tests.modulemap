@@ -1,0 +1,6 @@
+framework module Pods_NavigationBarColor_Tests {
+  umbrella header "Pods-NavigationBarColor_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

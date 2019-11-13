@@ -1,0 +1,22 @@
+{
+  "name": "NavigationBarColor",
+  "version": "0.1.0",
+  "summary": "A short description of NavigationBarColor.",
+  "description": "Easy to use color setting for each controller.",
+  "homepage": "https://github.com/hamewang/NavigationBarColor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hamewang": "hamewang"
+  },
+  "source": {
+    "git": "https://github.com/hamewang/NavigationBarColor.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NavigationBarColor/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - NavigationBarColor (0.1.0)
+
+DEPENDENCIES:
+  - NavigationBarColor (from `../`)
+
+EXTERNAL SOURCES:
+  NavigationBarColor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NavigationBarColor: c8f696d22e0a1f91620b4e09e14b0e3ea267df1b
+
+PODFILE CHECKSUM: 782c3aaf6384b0c518b600339e2ecf6a29de3858
+
+COCOAPODS: 1.8.3
