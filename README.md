@@ -19,6 +19,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'NavigationBarColor'
 ```
+## user
+  UINavigationBar add method 
+  -(void)wb_setBarTintColor:(UIColor*)color vcClass:(Class)vcClass;
+ ```
+  [self.navigationController.navigationBar wb_setBarTintColor:[UIColor redColor] vcClass:[UIViewController class]]
+ ```
 
 ## Author
 
